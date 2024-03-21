@@ -6,19 +6,53 @@
     <meta name="author" content="Kanyingi">
     <meta name="description" content="Project for Expense Tracker">
     <title>Expense Tracker</title>
+    <!--Link to Style-CSS-->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!--Hero's Section-->
     <h1>Expense Tracker</h1>
     <div class="container">
         <div class="main">
             <label for="category-Select">Category</label>
             <select name="Category" id="category-Select">
                 <option value="Food & Beverage">Food & Beverage</option>
-                <option value="Health">Transport</option>
-                <option value=""></option>
+                <option value="Health">Health</option>
+                <option value="Transport">Transport</option>
+                <option value="Travel">Travel</option>
             </select>
+            <label for="name-Input">Name :</label>
+            <input type="text" id="name-Input">
+            <label for="amount-Input">Amount :</label>
+            <input type="number" id="amount-Input">
+            <label for="date-Input">Date</label>
+            <input type="date" name="Date" id="date-Input">
+        </div>
+        <div class="expense-list">
+            <h2>Expenses List</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Name</th>
+                        <th>Amount</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody id="expensesTableBody">
+
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Total-Amount:</td>
+                        <td id="total-amount"></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tfoot>
+            </table>
         </div>
     </div>
+    <!--Link to Javascript-->
 </body>
 </html>
